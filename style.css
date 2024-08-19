@@ -567,7 +567,7 @@ li{
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
-        padding: 0.2rem 2rem 0.2rem 1rem;
+        padding: 0.2rem 2rem 0.2rem 0.1rem;
         column-gap: 10px;
     }
 
