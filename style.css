@@ -236,6 +236,183 @@ img{
     transform: scaleX(-1);
 }
 
+.our-service{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 3rem 4rem;
+    row-gap: 2rem;
+    background-color: #D7D7D7;
+}
+
+.our-service h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #092a41;
+}
+
+ul{
+    padding-left: 3rem;
+}
+
+li{
+    color: #3d5771;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+/* right hand arrangement of our services */
+.rh{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.rh .right{
+    width: 42%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.rh .right h1{
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 42px;
+    color: #092a41;
+}
+
+.rh .line{
+    width: 80%;
+    border: 0.1px solid #023c7e;
+    margin: 12px 0;
+}
+
+.rh .right p{
+    color: #3d5771;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.rh .right button{
+    width: fit-content;
+    height: auto;
+    padding: 16px 24px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.recruitment .left{
+    width: 50%;
+    height: 90vh;
+    background: url(./service-offering.jpg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(1);
+}
+
+/* testing code to make image flow with container */
+/* testing close */
+
+.training-dev .left{
+    width: 50%;
+    height: 90vh;
+    background: url(./BLOG\ &\ ARTICLES.jpg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(1);
+}
+
+
+
+/* left hand arrangement of our services*/
+.lh{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lh .left{
+    width: 42%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.lh .left h1{
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 42px;
+    color: #092a41;
+}
+
+.lh .line{
+    width: 80%;
+    border: 0.1px solid #023c7e;
+    margin: 12px 0;
+}
+
+.lh .left p{
+    color: #3d5771;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.lh .left button, button{
+    width: fit-content;
+    height: auto;
+    padding: 16px 24px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+
+.talent-mgt .right{
+    width: 50%;
+    height: 90vh;
+    background: url(./COMMUNITY\ &\ ENGAGEMENT.jpg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(1);
+}
+
+.strat-pol .right{
+    width: 50%;
+    height: 90vh;
+    background: url(./CONSULTING\ SERVICES.jpg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(1);
+}
+
 @media screen and (max-width:480px) {
     .top-color{
         width: 100%;
@@ -359,7 +536,7 @@ img{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        padding: 2rem 3rem;
+        padding: 2rem 1.5rem;
         row-gap: 1rem;
         margin: 1rem 0;
     }
@@ -375,44 +552,106 @@ img{
     }
     
     .about .left h1{
-        font-size: 32px;
+        font-size: 26px;
         font-weight: 800;
-        line-height: 40px;
+        line-height: 30px;
         color: #092a41;
     }
     
     .about .line{
         width: 90%;
         border: 0.1px solid #023c7e;
-        margin: 3px 0;
+        margin: 2px 0;
     }
     
     .about .left p{
         color: #3d5771;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
-        line-height: 26px;
+        line-height: 22px;
     }
     
     .about .left button{
-        width: fit-content;
-        height: auto;
-        padding: 16px 24px;
-        background-color: #023c7e;
-        color: white;
-        outline: none;
-        border: none;
+        padding: 14px 20px;
         border-radius: 3px;
-        cursor: pointer;
         margin-top: 8px;
     }
     
     .about .right{
         width: 100%;
         height: auto;
-        background: url(./ABOUT\ US.jpg) left no-repeat;
+        background: url(./ABOUT\ US.jpg) 50% 10% no-repeat;
         background-size: cover;
         transform: scaleX(-1);
-        padding: 10rem;
+        padding: 6rem 10rem;
     }
+
+    .our-service{
+        padding: 2rem 1.5rem;
+        row-gap: 2rem;
+    }
+    
+    .our-service h1{
+        font-size: 26px;
+    }
+    
+    
+    li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    /* right hand arrangement of our services */
+    .rh, .lh{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .rh .down, .lh .top{
+        width: 100%;
+        row-gap: 0.2rem;
+    }
+    
+    .rh .down h1, .lh .top h1{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    
+    .rh .line, .lh .line{
+        width: 80%;
+        border: 0.1px solid #023c7e;
+        margin: 2px 0;
+    }
+    
+    .rh .down p, .lh .top p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    
+    .rh button{
+        border-radius: 3px;
+        padding: 14px 20ox;
+        margin-top: 8px;
+    }
+    
+    .rh .top, .lh .down{
+        width: 100%;
+        height: auto;
+        padding: 6rem 10rem;
+        background-position: 50% 10%;
+    }
+    
+    .rh{
+        flex-direction: column-reverse;
+    }
+
+    
 }
