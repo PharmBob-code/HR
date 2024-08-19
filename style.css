@@ -7,10 +7,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
-    margin-bottom: 6rem;
-}
-
 a{
     text-decoration: none;
     cursor: pointer;
@@ -842,11 +838,11 @@ li{
     }
 
     .footer{
-        width: 100%;
-        height: auto;
-        justify-content: start;
-        align-items: start;
-        padding-left: 1.5rem;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: start;
+    padding: 1.5rem;
     }
 
     .footer .left{
