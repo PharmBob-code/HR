@@ -842,7 +842,7 @@ li{
     height: auto;
     justify-content: start;
     align-items: start;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1rem 3rem;
     }
 
     .footer .left{
@@ -850,12 +850,12 @@ li{
     }
 
     .footer h3{
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
     }
 
     .footer p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .footer .center, .footer .right{
@@ -870,6 +870,11 @@ li{
         justify-content: start;
         align-items: center;
         column-gap: 0.5rem;
+    }
+
+    .wrap i{
+        font-size: 12px;
+        color: aqua;
     }
     
 
