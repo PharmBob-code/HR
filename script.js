@@ -53,10 +53,10 @@ menuList.forEach(listItem=>{
       let clickAction = click.dataset.action
       if (clickAction === `home`) {
         window.location.href = "index.html"
-      }else if (clickAction === `projects`) {
-        window.location.href = "project.html"
+      }else if (clickAction === `blog`) {
+        window.location.href = "https://hrlifestylewithdidi.blogspot.com/"
       }else if(clickAction === `about`){
-        window.location.href = "about.html"
+        window.location.href = "about_us.html"
       }else if(clickAction ===`contact`){
         window.location.href = "contact.html"
       }else if(clickAction === `services`){

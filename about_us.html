@@ -20,9 +20,10 @@
             </div>
         </div>
     </section>
-        
-    <section class="header">
+
+    <section class="header" id="header">
         <a href="./index.html"><div class="logo-wrapper"><img src="./chidinma logo copy.svg" alt="logo"></div></a>
+
         <div class="nav-area">
             <div class="nav-links">
 
@@ -44,16 +45,35 @@
 
             </div>
 
-            <a href="./contact.html">
-                <button class="get-in-touch">CONNECT WITH US</button>
+            <a href="./contact.html" class="btn">
+                <button>CONNECT WITH US</button>
             </a>
+        </div>
+
+        <div class="menu-bar">
+            <i class="bi bi-list"></i>
         </div>
     </section>
 
-    <section class="about-page page-header">
-        <div class="overlay">
-            <h1>ABOUT US</h1>
+    <div class="overlay-hide" id="overlay-container">
+        <div class="modal" id="profile">
+            <div class="close-icon-box">
+                <i class="bi bi-x" id="close-modal-icon"></i>
+            </div>
+            <div class="list-container" id="list-container">
+                <p data-action="home">Home</p>
+                <p data-action="about">About Us</p>
+                <p data-action="services">Services</p>
+                <p data-action="contact">Contact</p>
+                <p data-action="blog">Blog</p>
+            </div>
+
+           
         </div>
+    </div>
+
+    <section class="about-page page-header">
+        <h1>ABOUT US</h1>
     </section>
 
     <section class="about-main">
@@ -73,21 +93,21 @@
         
         <div class="values">
             <div class="left">
-                <div class="core">
+                <div class="core wrap">
                     <h1>CORE VALUES:</h1>
-                    <div class="line"></div>
+                    <hr>
                     <p>Ethical Conduct, Innovation, Empowerment and Social Responsibility from the basis of our work culture as we strive to fulfill our mission and achieve our vision.</p>
                 </div>
 
-                <div class="vision">
+                <div class="vision wrap">
                     <h1>VISION:</h1>
-                    <div class="line"></div>
+                    <hr>
                     <p>Empowering organizations to build exceptional workplace where employees thrive and businesses succeed alongside providing innovative HR solutions setting standards for excellence and driving meaningful impact while cutting _edge technology and best practices to revolutionize HR practices creating lasting value for clients, employees and the community, enabling unparalleled organization success.</p>
                 </div>
 
-                <div class="mission">
+                <div class="mission wrap">
                     <h1>MISSION:</h1>
-                    <div class="line"></div>
+                    <hr>
                     <p>HR Lifestyle is dedicated to redefining the HR experience through innovative solutions that empowers organization to attract, retain and develop top talent, driving business performance and fostering a culture of excellence. With strategic partnerships and a commitment to client satisfaction, we aim to be the trusted HR partner that enables business to thrive in an ever _ changing world. Our mission is to deliver personalized, growth focused solutions that elevate the HR landscape for businesses of all sizes.</p>
                 </div>
             </div>
@@ -170,6 +190,6 @@
         </div>
     </section>
 
-    <script src="/Javascrpt/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
