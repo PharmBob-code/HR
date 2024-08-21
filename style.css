@@ -299,7 +299,7 @@ li{
     margin: 2px 0;
 }
 
-.rh .right p{
+.rh .right p, .our-service p{
     color: #3d5771;
     font-size: 16px;
     font-weight: 300;
@@ -1205,9 +1205,8 @@ label{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: start;
-        padding: 0.2rem 2rem 0.2rem 0.1rem;
-        column-gap: 10px;
+        align-items: center;
+        padding: 0 2rem 0 0.1rem;
     }
 
     .nav-area{
@@ -1358,10 +1357,19 @@ label{
         font-size: 26px;
     }
     
+    ul{
+        padding-left: 1.5rem;
+    }
     
     li{
         font-size: 14px;
         line-height: 20px;
+    }
+
+    ul .title{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
     }
     
     /* right hand arrangement of our services */
@@ -1393,7 +1401,7 @@ label{
         margin: 2px 0;
     }
     
-    .rh .down p, .lh .top p{
+    .rh .down p, .lh .top p, .our-service p{
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
@@ -1552,7 +1560,7 @@ label{
 
     .page-header{
         width: 100%;
-        height: 15vh;
+        height: 18vh;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -1574,6 +1582,10 @@ label{
        row-gap: 0.5rem;
        padding: 3rem 1rem 3rem 2rem;
     }
+
+    .brief br{
+        display: flex;
+    }
     
     .brief h1{
         font-size: 24px;
@@ -1591,10 +1603,12 @@ label{
     
     .values{
         width: 100%;
+        height: auto;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        padding: 0 0 0 2rem;
+        padding: 0 0 0 0;
+        
     }
     
     .values .left{
@@ -1605,7 +1619,7 @@ label{
         justify-content: start;
         align-items: start;
         row-gap: 1.5rem;
-        padding: 1rem 0;
+        padding: 2rem;
     }
     
     .values .wrap{
@@ -1629,7 +1643,7 @@ label{
         background: url(./unnamed.jpg) top no-repeat;
         background-size: cover;
         transform: scaleX(-1);
-        padding: 12rem;
+        padding: 12rem 0;
     }
 
     .why-us{
@@ -1650,6 +1664,10 @@ label{
         color: white;
     }
 
+    .why-us br{
+        display: flex;
+    }
+
     .why-us .right .point{
         width: 95%;
         height: auto;
@@ -1666,7 +1684,7 @@ label{
     
     .why-us h1{
         font-size: 26px;
-        line-height: 32px;
+        line-height: 34px;
     }
     
     .why-us .right .point{
@@ -1686,6 +1704,20 @@ label{
         line-height: 24px;
     }
     
+
+    /* SERVICES PAGE */
+
+    .services-page{
+        background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)),url(./SERVICES.jpg) center no-repeat;
+        background-size: 150%;
+    }
+    
+    
+    .page-header .overlay h1{
+        color: white;
+        font-size: 45px;
+        font-weight: 800;
+    }
     
 }
 
