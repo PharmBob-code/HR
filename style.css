@@ -533,7 +533,7 @@ li{
       .overlay-container{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -568,7 +568,7 @@ li{
     }
     .modal{
         width: 100%;
-        height: 60vh;
+        height: 100vh;
         background-color: #023c7e71;
         padding: 2rem;
         display: flex;
@@ -878,7 +878,6 @@ li{
         align-items: start;
         padding: 0.2rem 2rem 0.2rem 0.1rem;
         column-gap: 10px;
-        position: relative;
     }
 
     .nav-area{
