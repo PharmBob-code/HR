@@ -20,9 +20,10 @@
             </div>
         </div>
     </section>
-        
-    <section class="header">
+
+    <section class="header" id="header">
         <a href="./index.html"><div class="logo-wrapper"><img src="./chidinma logo copy.svg" alt="logo"></div></a>
+
         <div class="nav-area">
             <div class="nav-links">
 
@@ -44,16 +45,36 @@
 
             </div>
 
-            <a href="./contact.html">
-                <button class="get-in-touch">CONNECT WITH US</button>
+            <a href="./contact.html" class="btn">
+                <button>CONNECT WITH US</button>
             </a>
+        </div>
+
+        <div class="menu-bar">
+            <i class="bi bi-list"></i>
         </div>
     </section>
 
-    <section class="contact-page page-header">
-        <div class="overlay">
-            <h1>CONTACT US</h1>
+    <div class="overlay-hide" id="overlay-container">
+        <div class="modal" id="profile">
+            
+            <div class="close-icon-box">
+                <i class="bi bi-x" id="close-modal-icon"></i>
+            </div>
+            <div class="list-container" id="list-container">
+                <p data-action="home">Home</p>
+                <p data-action="about">About Us</p>
+                <p data-action="services">Services</p>
+                <p data-action="contact">Contact</p>
+                <p data-action="blog">Blog</p>
+            </div>
+
+           
         </div>
+    </div>
+
+    <section class="contact-page page-header">
+            <h1>CONTACT US</h1>
     </section>
 
     <section class="contact-main">
@@ -73,7 +94,7 @@
                     <i class="bi bi-telephone-fill"></i>
                     <h6>Phone</h6>
                 </div>
-                <h4>+234 803 7736 306</h4>
+                <a href="tel:234-8037-736-306"><h4>+2348037736306</h4></a>
             </div>
 
             <div class="email box">
@@ -81,7 +102,7 @@
                     <i class="bi bi-envelope-fill"></i>
                     <h6>Email</h6>
                 </div>
-                <h4>chatemmybrown@gmail.com</h4>
+                <a href="mailto:infohrlifestyle@gmail.com?subject=Hello&body=With care from HR-Lifestyle?"><h4>infohrlifestyle@gmail.com</h4></a>
             </div>
 
             <div class="map">
@@ -161,6 +182,6 @@
         </div>
     </section>
 
-    <script src="/Javascrpt/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
