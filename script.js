@@ -76,7 +76,15 @@ menuList.forEach(listItem=>{
 contactForm.addEventListener(`submit`, collectData)
 function collectData(event) {
     event.preventDefault()
-    // Collect the form data
+
+    emailjs.sendForm('OsteoBob', 'OsteoBob', this)
+        .then(function(response) {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message. Please try again.');
+        });
+
+    /* Collect the form data
     const namE = document.getElementById("name").value
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
@@ -95,7 +103,7 @@ function collectData(event) {
         localStorage.setItem(`data`, JSON.stringify(storageBox))
         console.log(storageBox);
         contactForm.reset()
-    }
+    }*/
     
 }
 
