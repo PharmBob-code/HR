@@ -113,7 +113,7 @@
         <div class="right">
             <h3>Send us a Message</h3>
             <hr>
-            <form action="/action_page.php" autocomplete="on" method="get" target="">
+            <form action="https://formspree.io/f/xyzgnvnk" method="post" id="contactForm" class="contactForm">
                 <!-- TEXT FIELD -->
                 <div class="form-group">
                     <label for="name">First name:</label><br>
@@ -127,12 +127,12 @@
 
                 <div class="form-group">
                     <label for="phone">Enter your phone number:</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="f-input">
+                    <input type="tel" id="phone" name="phone"  class="f-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="message">Message</label><br>
-                    <textarea name="message" rows="10" cols="30" placeholder="The cat was playing in the garden.">
+                    <textarea name="message" id="message" rows="10" cols="30" placeholder="The cat was playing in the garden.">
                     </textarea>
                 </div>
                 
@@ -181,6 +181,8 @@
             </div>
         </div>
     </section>
+
+    <div class="space"></div>
 
     <script src="./script.js"></script>
 </body>

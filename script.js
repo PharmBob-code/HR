@@ -2,11 +2,13 @@
 const header = document.getElementById(`header`)
 const navLinks = [...document.querySelectorAll(`.link`)]
 const menuBar = [...document.querySelectorAll(`.menu-bar`)]
-console.log(navLinks);
-
 const overlay = document.getElementById(`overlay-container`)
 const closeX = document.getElementById(`close-modal-icon`)
 const menuList = [...document.querySelectorAll(`.list-container p`)]
+const contactForm = document.getElementById(`contactForm`)
+let storageBox = []
+
+
 
 //Hover Effect to the header links + Menu overlay display
 navLinks.forEach(link=>{
@@ -71,6 +73,33 @@ menuList.forEach(listItem=>{
   })
 })
 
+contactForm.addEventListener(`submit`, collectData)
+function collectData(event) {
+    event.preventDefault()
+    // Collect the form data
+    const namE = document.getElementById("name").value
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    if (namE === ``|| email ===``|| phone ===`` || message===``) {
+        alert `please input a text`
+    }else{   
+        let object = {
+            clntName: namE,
+            clntEmail: email,
+            clntPhone: phone,
+            clntMessage: message,
+        }
+        storageBox.push(object)
+        localStorage.setItem(`data`, JSON.stringify(storageBox))
+        console.log(storageBox);
+        contactForm.reset()
+    }
+    
+}
+
+/*
 //HOVER
 const imageCont = [...document.querySelectorAll(`.img`)]
 const rightCont = document.getElementById(`right-content`)
@@ -89,5 +118,5 @@ imageCont.forEach(image =>{
           nextImage.style.transform = `scale(1)`
   })
 })
-  
+*/
   
