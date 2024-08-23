@@ -73,9 +73,8 @@ navLinks.forEach(link=>{
 menuIcon.addEventListener(`click`, displayModal)
 function displayModal() {
     const modal = document.getElementById('menuModal');
+    const modalCont = document.getElementById(`modalContent`)
     let span = document.getElementsByClassName('close')[0];
-  
-
     modal.style.display = 'flex';
   
     // Close the modal when the user clicks the close button
@@ -85,7 +84,7 @@ function displayModal() {
   
     // Close the modal when the user clicks outside the modal content
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target == modal || event.target == modalCont) {
             modal.style.display = 'none';
         }
     }

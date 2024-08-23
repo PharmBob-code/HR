@@ -239,7 +239,7 @@ img{
     justify-content: start;
     align-items: start;
     padding: 3rem 4rem;
-    row-gap: 2rem;
+    row-gap: 4rem;
     background-color: #D7D7D7;
 }
 
@@ -274,8 +274,7 @@ ul .title{
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    column-gap: 1rem;
-    margin-bottom: 2rem;
+    column-gap: 2rem;
 }
 
 .rh .right{
@@ -302,7 +301,7 @@ ul .title{
     margin: 2px 0;
 }
 
-.rh .right p, .our-service p{
+.rh .right p{
     color: #3d5771;
     font-size: 16px;
     font-weight: 300;
@@ -353,7 +352,7 @@ ul .title{
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    column-gap: 1rem;
+    column-gap: 2rem;
     margin-bottom: 2rem;
 
 }
@@ -529,9 +528,13 @@ ul .title{
 
 
 
+/* MENU MODAL */
+
     .menu-modal {
         display: none; /* Hidden by default */
         position: fixed;
+        flex-direction: column;
+        align-items: end;
         z-index: 1;
         left: 0;
         top: 0;
@@ -554,7 +557,7 @@ ul .title{
     }
     
     .list{
-        width: 100%;
+        width: fit-content;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -601,17 +604,23 @@ ul .title{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .msgmodal-content {
     background-color: #fff;
-    margin: 15% auto;
     padding: 20px;
+    margin: 100% auto;
+    margin-right: auto;
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+
 
 
 
@@ -881,13 +890,47 @@ ul .title{
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* SERVICES */
-.our-service .para{
-    width: 70%;
+.services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 5rem 3rem;
+    row-gap: 0.5rem;
+    background-color: #D7D7D7;
+}
+
+.services h1{
+    font-size: 38px;
+    font-weight: 800;
+    color: #092a41;
+}
+
+.services .para{
+    color: #3d5771;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 4rem;
+}
+
+.services-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    row-gap: 8rem;
+    background-color: #D7D7D7;
 }
 
 .services-page{
-    background: url(./SERVICES.jpg) center no-repeat;
-    background-size: 1400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0 , 0, 0.5)), url(./SERVICES.jpg) center no-repeat;
+    background-size: 120%;
 }
 
 .page-header .overlay{
@@ -949,12 +992,23 @@ label{
     cursor: pointer;
 }
 
+.submit:hover{
+    background-color: #103c6e;
+}
 
+button:hover{
+    background-color:#103c6e ;
+}
     
 .space{
     width: 100%;
     background-color: #7e0202;
     padding: 15rem;
+}
+
+.f-input:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #023c7e;
 }
 
 
@@ -2003,9 +2057,47 @@ label{
 
     .services-page{
         background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)),url(./SERVICES.jpg);
-        background-size: cover;
+        background-size: 140%;
         background-repeat: no-repeat;
         background-position-y: 60%;
+    }
+
+    .services{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 3rem 2rem;
+        row-gap: 0.5rem;
+        background-color: #D7D7D7;
+    }
+    
+    .services h1{
+        font-size: 28px;
+        font-weight: 800;
+        color: #092a41;
+    }
+    
+    .services .para{
+        color: #3d5771;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 2rem;
+    }
+    
+    .services-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 0;
+        row-gap: 3rem;
+        background-color: #D7D7D7;
     }
 
  /* CONTACT PAGE */
@@ -2136,6 +2228,19 @@ label{
 input, textarea, select {
     font-size: 16px;
 }
+
+
+/* MOBILE MODAL */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 
 }
 
