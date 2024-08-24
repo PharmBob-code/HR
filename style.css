@@ -879,6 +879,13 @@ ul .title{
     row-gap: 1rem;
 }
 
+.successMsg p{
+    color: #3d5771;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
 .contact-main hr{
     width: 80%;
 }
@@ -1010,6 +1017,50 @@ button:hover{
     outline: none;
     border: 1px solid #023c7e;
 }
+
+
+
+
+
+/* CSS ANIMATION */
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container{
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.container-left.animate {
+    animation: moveInLeft 1.2s ease-out forwards;
+}
+
+.container-right.animate {
+    animation: moveInRight 1.2s ease-out forwards;
+}
+
+
+
 
 
 

@@ -144,6 +144,7 @@ function showModal(message) {
   // Close the modal when the user clicks the close button
   span.onclick = function() {
       modal.style.display = 'none';
+      removeForm(message)
   }
 
   // Close the modal when the user clicks outside the modal content
@@ -151,5 +152,26 @@ function showModal(message) {
       if (event.target == modal) {
           modal.style.display = 'none';
       }
+      removeForm(message)
   }
 }
+
+
+function removeForm(params) {
+  const deleteForm = document.getElementById(`formContent`)
+  const successMsg = document.getElementById(`successMsg`)
+  deleteForm.style.display = `none`;
+  successMsg.textContent = `Thanks for contacting us! We will be in touch with you shortly.`
+  console.log(successMsg);
+
+}
+
+
+
+
+
+
+/*CSS ANIMATIONS*/
+
+
+

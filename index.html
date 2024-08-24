@@ -88,14 +88,14 @@
     </section>
 
 <section class="about">
-        <div class="left">
+        <div class="left container container-left" >
             <h1>ABOUT <br>HR-LIFESTYLE</h1>
             <div class="line"></div>
             <p>At HR-Lifestyle, our mission is to cultivate balanced and productive work environments that foster both individual and organizational success. We are committed to empowering HR professionals and businesses with innovative solutions that enhance workplace culture and drive career growth.</p>
             <a href="./about_us.html"><button>LEARN MORE</button></a>
         </div>
 
-        <div class="right">
+        <div class="right container container-right">
         </div>
     </section>
 
@@ -104,10 +104,10 @@
 
         <!-- RECRUITMENT -->
         <div class="recruitment rh">
-            <div class="left top">
+            <div class="left top container container-left">
             </div>
     
-            <div class="right down">
+            <div class="right down container container-right">
                 <h1>Recruitment</h1>
                 <div class="line"></div>
                 <p>Our recruitment services are designed to help you attract and select the best talent for your organization. We utilize advanced sourcing strategies, behavioral assessments, and industry insights to ensure you have the right people in the right roles, driving your business forward.</p>
@@ -123,9 +123,9 @@
         </div>
 
         <!-- TALENT MGT -->
-        <div class="talent-mgt lh">
+        <div class="talent-mgt">
 
-            <div class="left top">
+            <div class="left top container container-left">
                 <h1>Talent <br>Management</h1>
                 <div class="line"></div>
                 <p>We provide talent management solutions that nurture and develop your employees. From performance management to leadership development, our services are aimed at maximizing your workforce's potential and aligning it with your business goals.</p>
@@ -141,7 +141,7 @@
                 </a>
             </div>
 
-            <div class="right down">
+            <div class="right down container container-right">
 
             </div>
     
@@ -150,11 +150,11 @@
 
         <!-- TRAINING & DEV -->
         <div class="training-dev rh">
-            <div class="left top">
+            <div class="left top container container-left">
 
             </div>
     
-            <div class="right down">
+            <div class="right down container container-right">
                 <h1>Training & <br>Development</h1>
                 <div class="line"></div>
                 <p>Our tailored training programs are designed to enhance the skills and competencies of your workforce. Whether it's technical skills, soft skills, or leadership training, we create development plans that are aligned with your organizational objectives.</p>
@@ -172,7 +172,7 @@
         <!-- HR STRATEGIES & POLICIES -->
         <div class="strat-pol lh">
 
-            <div class="left top">
+            <div class="left top container container-left">
                 <h1>HR Strategies <br>and Policies</h1>
                 <div class="line"></div>
                 <p>We help organizations develop and implement effective HR strategies and policies that support business growth and compliance. From workforce planning to employee relations, our services ensure that your HR practices are both strategic and operationally sound.</p>
@@ -188,7 +188,7 @@
                 </a>
             </div>
 
-            <div class="right down">
+            <div class="right down container container-right">
 
             </div>
     
@@ -285,5 +285,23 @@
     </div> -->
     
     <script src="script.js"></script>
+    <script>
+        function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('animate'); // Add the animate class
+          observer.unobserve(entry.target); // Stop observing once animated
+      }
+  });
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.1 // Trigger when 10% of the element is visible
+});
+
+document.querySelectorAll('.container').forEach(container => {
+  observer.observe(container); // Observe each container
+});
+    </script>
 </body>
 </html>
