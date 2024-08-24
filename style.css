@@ -48,7 +48,7 @@ span{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 1.5rem;
 }
 
 .logo-wrapper{
@@ -68,7 +68,7 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-right: 3rem;
+    padding-right: 2rem;
     padding-left: 1rem;
     column-gap: 3rem;
     overflow: hidden;
@@ -401,10 +401,10 @@ ul .title{
 }
 
 
-.talent-mgt .right{
+.talent-mgt .down{
     width: 40%;
     height: auto;
-    background: url(./COMMUNITY\ &\ ENGAGEMENT.jpg) center no-repeat;
+    background: url(COMMUNITY\ &\ ENGAGEMENT.jpg) center no-repeat;
     background-size: cover;
     transform: scaleX(1);
     flex: 0.8;
