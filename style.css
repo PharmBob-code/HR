@@ -150,8 +150,8 @@ img{
 .description-text p{
     color: rgb(225, 225, 225);
     font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .hero button{
@@ -173,19 +173,20 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items:stretch;
-    padding: 3rem 4rem;
+    padding: 6rem 4rem;
     column-gap: 1rem;
 }
 
 .about .left{
-    width: 42%;
+    width: 45%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 0.5rem;
-    flex: 1.1;
+    position: relative;
+    overflow: hidden;
 }
 
 .about .left h1{
@@ -221,14 +222,11 @@ img{
 }
 
 .about .right{
-    width: 42%;
+    width: 50%;
     height: auto;
-    display: flex;
-    transform: scaleX(-1);
     background: url(./ABOUT\ US.jpg) left no-repeat;
     background-size: cover;
-    flex: 0.9;
-   
+    transform: scaleX(-1);
 }
 
 .our-service{
@@ -304,7 +302,7 @@ ul .title{
 .rh .right p{
     color: #3d5771;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
 }
 
@@ -384,7 +382,7 @@ ul .title{
 .lh .left p{
     color: #3d5771;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
 }
 
@@ -480,20 +478,46 @@ ul .title{
 .assurance{
     width: 100;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./ASSURANCE.jpg) 50% 5% no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./ASSURANCE.jpg) 50% 15%no-repeat;
+    background-size: 100%;
 }
 
-.assurance .container{
-    width: 80%;
+.assurance .content{
+    width: 85%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 1rem;
-    padding: 6rem 2rem;
+    padding: 6rem 6rem;
     
+}
+
+.content h1{
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 68px;
+}
+
+.content p{
+    color: rgb(232, 232, 232);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.content button{
+    width: fit-content;
+    height: auto;
+    padding: 14px 20px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
 }
 
 /* footer */
@@ -594,33 +618,6 @@ ul .title{
 
 /* MESSAGE MODAL */
 
-.msgmodal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    
-}
-
-.msgmodal-content {
-    background-color: #fff;
-    padding: 20px;
-    margin: 100% auto;
-    margin-right: auto;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-
 
 
 
@@ -638,7 +635,7 @@ ul .title{
 
 /* ABOUT */
 .about-page{
-    background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)), url(./ABOUT\ US.jpg) center no-repeat;
+    background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)), url(./ABOUT\ US.jpg) 10% 30% no-repeat;
 }
 
 .about-main{
@@ -677,8 +674,8 @@ ul .title{
 .brief p{
     color: #3d5771;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 
@@ -691,7 +688,7 @@ ul .title{
     justify-content: space-between;
     align-items: stretch;
     padding: 0 0 0 4rem;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     background-color: #D7D7D7;
 }
 
@@ -714,7 +711,7 @@ ul .title{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 0.3rem;
+    row-gap: 0.75rem;
 }
 
 .values .left h1{
@@ -732,9 +729,9 @@ ul .title{
 
 .values .left p{
     color: #3d5771;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 .values .right{
@@ -785,9 +782,9 @@ ul .title{
 
 .why-us.point p{
     color: whitesmoke;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .why-us .left{
@@ -918,7 +915,7 @@ ul .title{
 .services .para{
     color: #3d5771;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 26px;
     margin-bottom: 4rem;
 }
@@ -1019,6 +1016,44 @@ button:hover{
 }
 
 
+ 
+
+
+ .msgmodal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.msgmodal-content{
+    width: fit-content;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    column-gap: 1rem;
+
+}
+
+
+
+
+
+
 
 
 
@@ -1060,13 +1095,469 @@ button:hover{
 }
 
 
+/* IPAD LARGE */
+@media screen and (max-width:1024px){
 
+    .top-color{
+        width: 100%;
+        height: auto;
+        background-color: #0E2239;
+        color: white;
+        display: flex;
+        padding: 8px 0 8px 0;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.2rem 2.5rem;
+        /* padding: 0.2rem 0.5rem; */
+    }
+    
+    
+    .nav-area{
+        display: flex;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+    
+    .link{
+        font-size: 16px;
+    }
+    
+    .nav-area button{
+        padding: 14px 18px;
+        font-size: 10px;
+        font-weight: 600;
+        
+    }
+
+    .hero{
+        padding: 3rem 0;
+    }
+
+    .hero .content{
+        row-gap: 1rem;
+        padding: 16px 3rem;
+    }
+
+    .display-text h1, h1{
+        color: white;
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 67px;
+    }
+
+    .description-text{
+        width: 80%;
+    }
+
+    .about{
+        padding: 5rem 3rem;
+        column-gap: 1.5rem;
+        align-items: stretch;
+    }
+    
+    .about .left{
+        row-gap: 0.5rem;
+    }
+    
+    .about .left h1{
+        font-size: 32px;
+        font-weight: 780;
+        line-height: 38px;
+        color: #092a41;
+    }
+    
+    .about .right{
+        height: auto;
+    }
+
+    .about .line{
+        width: 80%;
+        margin: 1px 0;
+    }
+
+    .our-service{
+        padding: 3rem 3rem;
+    }
+    
+    .our-service h1{
+        font-size: 36px;
+    }
+    
+    /* right hand arrangement of our services */
+    .rh, .lh{
+        column-gap: 2rem;
+    }
+    
+    .rh .right, .lh .left{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    }
+    
+    .rh .right h1, .lh .left h1{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 38px;
+    }
+    
+    .rh .line, .lh .line{
+        width: 80%;
+        margin: 2px 0;
+    }
+    
+    .rh .right button, .lh .left button{
+        padding: 14px 22px;
+        border-radius: 0;
+    }
+    
+    .why-choose .left{
+        row-gap: 1.5rem;
+        padding: 4rem 3rem;
+    }
+    
+    .why-choose h1{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .assurance{
+        width: 100%;
+        height: auto;
+        background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(./ASSURANCE.jpg) 0 5% no-repeat;
+        /*  The Linear gradient directly combines the a color tint with the background image using background-blend-mode, which is a cleaner solution when blending is needed. This offers an alternative to overlay */
+        background-size: cover;
+        position: relative;
+        padding: 2rem 0;
+    }
+    
+    .assurance .content{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+        padding: 4px 3rem;
+    }
+    
+    .content h1{
+        color: rgba(252, 252, 252, 1);
+       
+    }
+    
+    .content p{
+        width: 70%;
+        color: rgb(225, 225, 225, 0.8);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    
+    .content button{
+        width: fit-content;
+        height: auto;
+        padding: 14px 20px;
+        background-color: #023c7e;
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 12px;
+        font-weight: 600;
+    }
+
+     /* PAGES */
+
+     .page-header{
+        height: 26vh;
+        padding-left: 3rem;
+    }
+
+    .page-header h1{
+        font-size: 38px;
+    }
+
+      /* ABOUT */
+      .about-page{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 35%;
+    }
+
+  
+    
+    .about-main{
+        row-gap: 2rem;
+    }
+    
+    .brief {
+       width: 100%;
+       row-gap: 0.75rem;
+       padding: 5rem 3rem;
+    }
+
+    
+    .brief h1{
+        font-size: 26px;
+    }
+    
+    
+    .brief p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    
+    .values{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 0;
+        
+    }
+    
+    .values .left{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1.5rem;
+        padding: 3rem;
+    }
+    
+    .values .wrap{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.75rem;
+    }
+    
+    .values .left h1{
+        font-size: 18px;
+    }
+    
+    .values .right{
+        width: 100%;
+        height: 100vh;
+        background: url(./unnamed.jpg) top no-repeat;
+        background-size: cover;
+        background-position-y: 10%;
+        transform: scaleX(-1);
+        padding: 15rem 0;
+    }
+
+    .why-us{
+        width: 100%;
+        height: auto;
+    }
+
+    .why-us .right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 2rem;
+        padding: 4rem 7rem;
+        background-color: #0E2239;
+        color: white;
+    }
+
+    .why-us br{
+        display: none;
+    }
+
+    .why-us .right .point{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    
+    .why-us .left{
+        display: none;
+    }
+    
+    .why-us h1{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    
+    .why-us.point p{
+        color: whitesmoke;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+
+    /* SERVICES PAGE */
+
+    .services-page{
+        background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)),url(./SERVICES.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 60%;
+    }
+
+ /* CONTACT PAGE */
+ /* CONTACT */
+.contact-page{
+    background: linear-gradient(rgb(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./handshake.jpg) center no-repeat ;
+    background-size: cover;
+}
+
+.contact-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 2.5rem;
+    padding: 3rem 2rem;
+}
+
+.contact-main .left{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.contact-main .box{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-main .top{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.contact-main hr{
+   border: 0.5px solid #023c7e;
+   margin-bottom: 0.5rem;
+}
+
+.top .bi{
+    color: #023c7e;
+    font-size: 12px;
+}
+
+.top h6{
+    font-size: 14px;
+    font-weight: 800;
+    color: #023c7e;
+}
+
+.box h4{
+    font-size: 18px;
+    font-weight: 300;
+    text-indent: 1.2rem;
+    color: #436176;
+
+}
+
+.contact-main .right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.contact-main h3{
+    color: #0E2239;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+form .form-group{
+    width: 100%;
+    height: auto;
+}
+form .f-input, textarea{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(195, 197, 218);
+    background-color: rgb(237, 238, 250);
+    padding: 12px 12px;
+}
+
+label{
+    color: #023c7e;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.submit{
+    width: 100%;
+    height: auto;
+    padding: 16px 24px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+}
 
 
 
 /* IPAD SCREENS */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:820px){
 
     .top-color{
         width: 100%;
@@ -1158,7 +1649,7 @@ button:hover{
         justify-content: start;
         align-items: start;
         row-gap: 1rem;
-        padding: 16px 2rem;
+        padding: 16px 3rem;
     }
 
     .display-text h1, h1{
@@ -1169,12 +1660,13 @@ button:hover{
     }
 
     .description-text{
-        width: 100%;
+        width: 80%;
     }
 
     .about{
-        padding: 2rem 2rem;
+        padding: 3rem;
         column-gap: 1.5rem;
+        align-items: stretch;
     }
     
     .about .left{
@@ -1303,7 +1795,7 @@ button:hover{
      /* PAGES */
 
      .page-header{
-        height: 20vh;
+        height: 25vh;
         padding-left: 3rem;
     }
 
@@ -1655,7 +2147,7 @@ label{
         justify-content: start;
         align-items: start;
         row-gap: 0.5rem;
-        padding: 4px 1.5rem;
+        padding: 1.5rem;
     }
     
     .display-text{
@@ -1673,11 +2165,12 @@ label{
         width: 100%;
     }
     
-    .description-text p{
+    .hero .content p{
+        width: 90%;
         color: rgb(225, 225, 225);
         font-size: 14px;
-        font-weight: 300;
-        line-height: 22px;
+        font-weight: 400;
+        line-height: 24px;
     }
     
     .hero button{
@@ -1756,8 +2249,14 @@ label{
     .our-service h1{
         font-size: 26px;
     }
+
+    .lh p, .rh p{
+        text-align: justify;
+        margin-bottom: 0.5rem;
+    }
     
     ul{
+        
         padding-left: 1.5rem;
     }
     
@@ -1861,7 +2360,7 @@ label{
         padding: 2rem 0;
     }
     
-    .assurance .container{
+    .assurance .content{
         width: 90%;
         height: auto;
         display: flex;
@@ -1871,22 +2370,24 @@ label{
         row-gap: 0.5rem;
         padding: 4px 1.5rem;
     }
+
+
     
-    .container h1{
+    .content h1{
         color: rgb(255, 245, 245, 0.8);
         font-size: 28px;
         font-weight: 800;
         line-height: 36px;
     }
     
-    .container p{
+    .content p{
         color: rgb(225, 225, 225, 0.8);
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
     }
     
-    .container button{
+    .content button{
         width: fit-content;
         height: auto;
         padding: 14px 20px;
@@ -1967,9 +2468,9 @@ label{
     
     /* ABOUT */
     .about-page{
-        background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)), url(./ABOUT\ US.jpg) left no-repeat;
+        background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)), url(./ABOUT\ US.jpg) center no-repeat;
         background-size: cover;
-        background-position-y: 10%;
+        
     }
     
     .about-main{
@@ -1979,7 +2480,7 @@ label{
     .brief {
        width: 100%;
        row-gap: 0.5rem;
-       padding: 3rem 1rem 3rem 2rem;
+       padding: 3rem 2rem 3rem 2rem;
     }
 
     .brief br{
@@ -1994,8 +2495,9 @@ label{
     
     .brief p{
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 22px;
+        text-align: justify;
     }
     
     
@@ -2035,6 +2537,13 @@ label{
     .values .left h1{
         font-size: 18px;
     }
+
+    .values p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: justify;
+    }
     
     .values .right{
         width: 100%;
@@ -2044,6 +2553,8 @@ label{
         transform: scaleX(-1);
         padding: 12rem 0;
     }
+
+
 
     .why-us{
         width: 100%;
@@ -2099,8 +2610,9 @@ label{
     .why-us.point p{
         color: whitesmoke;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 24px;
+        text-align: justify;
     }
     
 
@@ -2108,9 +2620,9 @@ label{
 
     .services-page{
         background: linear-gradient(rgb(0, 3, 3, 0.5),rgba(0, 0, 0, 0.5)),url(./SERVICES.jpg);
-        background-size: 140%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: 60%;
+        background-position:20% 70%;
     }
 
     .services{
@@ -2137,6 +2649,7 @@ label{
         font-weight: 300;
         line-height: 26px;
         margin-bottom: 2rem;
+        text-align: justify;
     }
     
     .services-container{
@@ -2291,6 +2804,16 @@ input, textarea, select {
     cursor: pointer;
 }
 
+.msgmodal{
+    padding: 0 2rem;
+}
+
+.msgmodal-content{
+    margin: auto;
+    margin-bottom: 70%;
+    text-align: center;
+
+}
 
 
 }
