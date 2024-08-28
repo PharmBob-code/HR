@@ -2166,7 +2166,7 @@ label{
     }
     
     .hero .content p{
-        width: 90%;
+        width: 95%;
         color: rgb(225, 225, 225);
         font-size: 14px;
         font-weight: 400;
@@ -2251,7 +2251,6 @@ label{
     }
 
     .lh p, .rh p{
-        text-align: justify;
         margin-bottom: 0.5rem;
     }
     
@@ -2497,7 +2496,6 @@ label{
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
-        text-align: justify;
     }
     
     
@@ -2542,7 +2540,6 @@ label{
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
-        text-align: justify;
     }
     
     .values .right{
@@ -2608,11 +2605,10 @@ label{
     }
     
     .why-us.point p{
-        color: whitesmoke;
+        color: white;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
-        text-align: justify;
     }
     
 
@@ -2649,7 +2645,6 @@ label{
         font-weight: 300;
         line-height: 26px;
         margin-bottom: 2rem;
-        text-align: justify;
     }
     
     .services-container{
