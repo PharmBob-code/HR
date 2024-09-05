@@ -116,16 +116,15 @@ img {
   width: 100%;
   height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./hero\ 5.jpg) center no-repeat;
+    url(./hero.jpg) center no-repeat;
   /*  The Linear gradient directly combines the a color tint with the background image using background-blend-mode, which is a cleaner solution when blending is needed. This offers an alternative to overlay */
   background-size: cover;
-  padding: 6.5rem 0;
-  overflow: hidden;
+  padding: 6rem 0;
 }
 
 .hero .content {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -136,7 +135,6 @@ img {
 
 .display-text {
   width: 100%;
-  padding-right: 3rem;
 }
 
 .display-text h1,
@@ -152,9 +150,9 @@ h1 {
 }
 
 .description-text p {
-  color: rgb(227, 225, 225);
+  color: rgb(225, 225, 225);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 26px;
 }
 
@@ -227,8 +225,8 @@ h1 {
 
 .about .right {
   width: 50%;
-  height: 70vh;
-  background: url(./ABOUT\ US.jpg) left no-repeat;
+  height: 75vh;
+  background: url(./ABOUT.jpg) left no-repeat;
   background-size: cover;
   transform: scaleX(-1);
 }
@@ -326,7 +324,7 @@ ul .title {
   width: 40%;
   height: auto;
   display: flex;
-  background: url(./service-offering.jpg) center no-repeat;
+  background: url(./HR/service-offering.jpg) center no-repeat;
   background-size: cover;
   transform: scaleX(1);
   flex: 0.8;
@@ -339,16 +337,6 @@ ul .title {
   width: 40%;
   height: auto;
   background: url(./BLOG\ &\ ARTICLES.jpg) center no-repeat;
-  background-size: cover;
-  transform: scaleX(1);
-  flex: 0.8;
-}
-
-.hr-business-partner .left {
-  width: 40%;
-  height: auto;
-  display: flex;
-  background: url(./HR\ Partner.jpg) center no-repeat;
   background-size: cover;
   transform: scaleX(1);
   flex: 0.8;
@@ -476,7 +464,7 @@ button {
 .why-choose .right {
   width: 50%;
   height: 100%;
-  background: url(./HERO\ 5.jpg) center no-repeat;
+  background: url(./HERO\ IMAGE.jpg) center no-repeat;
   background-size: cover;
   object-fit: cover;
   position: absolute;
@@ -505,23 +493,21 @@ button {
   padding: 6rem 6rem;
 }
 
-.assurance h1 {
+.content h1 {
   color: rgb(255, 255, 255);
-  font-size: 45px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 68px;
-  width: 70%;
 }
 
-.assurance p {
+.content p {
   color: rgb(232, 232, 232);
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-  width: 60%;
 }
 
-.assurance button {
+.content button {
   width: fit-content;
   height: auto;
   padding: 14px 20px;
@@ -1085,7 +1071,7 @@ textarea:focus {
 }
 
 /* IPAD LARGE */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .top-color {
     width: 100%;
     height: auto;
@@ -1142,7 +1128,7 @@ textarea:focus {
   }
 
   .description-text {
-    width: 90%;
+    width: 80%;
   }
 
   .about {
@@ -1536,16 +1522,6 @@ textarea:focus {
     outline: none;
     border: none;
     cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .nav-area {
-    width: 72%;
-  }
-
-  .description-text {
-    width: 100%;
   }
 }
 
